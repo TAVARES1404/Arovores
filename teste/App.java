@@ -21,7 +21,7 @@ public class App {
         BufferedWriter writer = new BufferedWriter(new FileWriter(new File("output.csv")));
 
         int n = 100;
-        int repeticoes = 1;
+        int repeticoes = 2;
 
         writer.write("N;AvoreAVL-Ordenada;AvoreAVL-Aleatoria;AvoreRubroNegra-Ordenada;AvoreRubroNegra-Aleatoria;ArvoreB-Ordenada-1;ArvoreB-Aleatoria-1;ArvoreB-Ordenada-5;ArvoreB-Aleatoria-5;ArvoreB-Ordenada-10;ArvoreB-Aleatoria-10;\n");
 
@@ -77,11 +77,11 @@ public class App {
             }
 
             writer.write(i + ";" +
-                    (somaAVLOrdenada) + ";" + (somaAvlAleatoria) + ";" + 
-                    (somaRubroNegraOrdenada) + ";" +  (somaRubroNegraAleatoria) + ";" + 
-                    (somaArvoreBOrdenada1) + ";" +(somaArvoreBAleatoria1) + ";" +
-                    (somaArvoreBOrdenada5) + ";" +(somaArvoreBAleatoria5) + ";" +
-                    (somaArvoreBOrdenada10) + ";" +(somaArvoreBAleatoria10) + ";" +
+                    (somaAVLOrdenada) + ";" + (somaAvlAleatoria / repeticoes ) + ";" + 
+                    (somaRubroNegraOrdenada) + ";" +  (somaRubroNegraAleatoria / repeticoes) + ";" + 
+                    (somaArvoreBOrdenada1) + ";" +(somaArvoreBAleatoria1 / repeticoes) + ";" +
+                    (somaArvoreBOrdenada5) + ";" +(somaArvoreBAleatoria5 / repeticoes) + ";" +
+                    (somaArvoreBOrdenada10) + ";" +(somaArvoreBAleatoria10 / repeticoes) + ";" +
                     "\n");
 
             ArvoreAvlOrdenada.count = 0;
