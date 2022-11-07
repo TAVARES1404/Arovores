@@ -20,8 +20,8 @@ public class App {
     public static void main(String[] args) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(new File("output.csv")));
 
-        int n = 100;
-        int repeticoes = 2;
+        int n = 1000;
+        int repeticoes = 10;
 
         writer.write("N;AvoreAVL-Ordenada;AvoreAVL-Aleatoria;AvoreRubroNegra-Ordenada;AvoreRubroNegra-Aleatoria;ArvoreB-Ordenada-1;ArvoreB-Aleatoria-1;ArvoreB-Ordenada-5;ArvoreB-Aleatoria-5;ArvoreB-Ordenada-10;ArvoreB-Aleatoria-10;\n");
 
